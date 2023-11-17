@@ -1,15 +1,18 @@
 <template>
+  <div class="Cart">
+    <HomePage/>
+  </div>
   
-  <Home/>
 </template>
 
 <script>
-import Home from './components/HelloWorld.vue'
+import HomePage from './components/HomePage.vue'
+
 
 export default {
   name: 'App',
   components: {
-    Home
+    HomePage
   }
 }
 </script>
