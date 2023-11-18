@@ -1,7 +1,7 @@
 <template>
-  <div class="Home">
+  <div class="Home m-0 p-0">
     <!--Header-->
-    <div class="row gx-0 headerRow d-flex justify-content-center">
+    <div class="row m-0 headerRow d-flex justify-content-center">
       <!-- Heading Row -->
       <div class="col-10 Heading font3 d-flex justify-content-start">
         <div class="col-6 d-flex justify-content-start">
@@ -17,7 +17,7 @@
     </div>
 
     <!-- Navigation Row -->
-    <div class="row gx-0 navigRow  d-flex justify-content-center">
+    <div class="row m-0 navigRow  d-flex justify-content-center">
       <div class="col-10 d-flex justify-content-between">
         <div class="d-flex justify-content-start">
           <img src="../assets/menubar.png" class="navbarIcon" alt="Image not loading">
@@ -31,6 +31,21 @@
         </div>
       </div>
     </div>
+
+    <!-- Banner 1 -->
+    <div class="container-fluid m-0 bg-warning">
+      <div class="col-12">
+        <img src="../assets/banner1.jpg" style="width:100%" alt="">
+      </div>
+    </div>
+
+    <!-- Banner 2 -->
+    <div class="container-fluid m-0 bg-warning">
+      <div class="col-12">
+        <img src="../assets/banner2.jpg" style="width:100%" alt="">
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -42,6 +57,9 @@ export default {
 
 <style scoped>
 .Home {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
   font-family: "Montserrat";
   font-style: normal;
   /* width: 1366px; */
