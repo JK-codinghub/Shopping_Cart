@@ -1,16 +1,33 @@
 <template>
   <div class="Home">
     <!--Header-->
-    <div class="row m-0 p-0 headerRow d-flex justify-content-center">
+    <div class="row gx-0 headerRow d-flex justify-content-center">
+      <!-- Heading Row -->
       <div class="col-10 Heading font3 d-flex justify-content-start">
-        <div class="col-6 d-flex align-items-center justify-content-start">
+        <div class="col-6 d-flex justify-content-start">
           Welcome to Our Store Hiscraves
         </div>
         <div
-          class="col-6 d-flex align-items-center justify-content-end contactNum"
+          class="col-6 d-flex justify-content-end contactNum"
         >
           <img loading="lazy" src="../assets/phone.png" class="phone" />
           Call Us: 1234567890
+        </div>
+      </div>   
+    </div>
+
+    <!-- Navigation Row -->
+    <div class="row gx-0 navigRow  d-flex justify-content-center">
+      <div class="col-10 d-flex justify-content-between">
+        <div class="d-flex justify-content-start">
+          <img src="../assets/menubar.png" class="navbarIcon" alt="Image not loading">
+        </div>
+        <div class="logo font4 d-flex align-items-center">Logo Here</div>
+        <div class="d-flex d-flex justify-content-end">
+          <span class="navlinks"> <img src="../assets/search.png" alt=""> </span>
+          <span class="navlinks"> <img src="../assets/likes.png" alt=""> </span>
+          <span class="navlinks"> <img src="../assets/shopping-bag.png" alt=""> </span>
+          <span class="navlinks"> <img src="../assets/user-icon.png" alt=""> </span>
         </div>
       </div>
     </div>
@@ -67,5 +84,23 @@ font6 {
 }
 .contactNum {
   margin-right: 16px;
+}
+.navigRow {
+  padding: 32px 0px 32px 0px;
+}
+.navbarIcon{
+  width: 24px;
+  height: 24px;
+}
+.logo{
+  color: var(--Primary-Color_1, #1C1C1C);
+font-family: "Playfair Display";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.navlinks{
+  margin-left:24.67px;
 }
 </style>
