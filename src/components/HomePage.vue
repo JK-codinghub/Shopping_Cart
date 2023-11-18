@@ -39,6 +39,13 @@
       </div>
     </div>
 
+    <!-- Poduct Category -->
+    <div class="row gx-0 categoryRow d-flex justify-content-center">
+      <div class="col-10">
+        <ProductCategory/>
+      </div>
+    </div>
+
     
     <!-- Offers -->
     <div class="row offersRow gx-0 d-flex justify-content-center">
@@ -61,11 +68,13 @@
 <script>
  
 import OffersPage from './OffersPage.vue';
+import ProductCategory from './ProductCategory.vue'
 
 export default {
   name: "HomePage",
   components:{
-    OffersPage
+    OffersPage,
+    ProductCategory
   }
 };
 </script>
@@ -140,6 +149,9 @@ line-height: normal;
   margin-top: 68px !important;
 }
 .offersRow{
+  margin-top: 68px !important;
+}
+.categoryRow{
   margin-top: 68px !important;
 }
 </style>
