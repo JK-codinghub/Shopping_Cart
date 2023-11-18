@@ -33,14 +33,23 @@
     </div>
 
     <!-- Banner 1 -->
-    <div class="container-fluid m-0 bg-warning">
+    <div class="container-fluid m-0 p-0 bg-warning">
       <div class="col-12">
         <img src="../assets/banner1.jpg" style="width:100%" alt="">
       </div>
     </div>
 
+    
+    <!-- Offers -->
+    <div class="row offersRow gx-0 d-flex justify-content-center">
+      <div class="col-10 d-flex justify-content-start">
+        <OffersPage/>
+      </div>
+    </div>
+
+
     <!-- Banner 2 -->
-    <div class="container-fluid m-0 bg-warning">
+    <div class="container-fluid banner2 m-0 p-0">
       <div class="col-12">
         <img src="../assets/banner2.jpg" style="width:100%" alt="">
       </div>
@@ -50,8 +59,14 @@
 </template>
 
 <script>
+ 
+import OffersPage from './OffersPage.vue';
+
 export default {
   name: "HomePage",
+  components:{
+    OffersPage
+  }
 };
 </script>
 
@@ -120,5 +135,11 @@ line-height: normal;
 }
 .navlinks{
   margin-left:24.67px;
+}
+.banner2{
+  margin-top: 68px !important;
+}
+.offersRow{
+  margin-top: 68px !important;
 }
 </style>
