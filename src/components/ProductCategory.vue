@@ -1,11 +1,11 @@
 <template>
   <div class="categoryRow gx-0 scrolling-wrapper row flex-row flex-nowrap ">
-    <div class="col-2" v-for="(category,index) in categoryLoop" :key="index">
+    <div class=" col-sm-6 col-md-4 col-lg-2 col-xl-2" v-for="(category,index) in categoryLoop" :key="index">
         <div class="row gx-0">
-            <div class="col-12" :class="category.class">
+            <div class="col-12 d-flex justify-content-center" :class="category.class">
              <!-- <img :src="categoryLoop[0].path" width="170" height="170" alt="">     -->
             </div>       
-            <div class="col-12 d-flex justify-content-start categoryStyle">{{category.name}}</div>
+            <div class="col-12 d-flex justify-content-center categoryStyle">{{category.name}}</div>
         </div>
     </div>
   </div>
@@ -56,7 +56,7 @@ export default {
 .ellipse{
   width: 170px;
   height: 170px;
-  margin-right: 20px;
+  margin: 0px 10px 0px 10px;
   border-radius: 170px;
 }
 .category1{
@@ -77,7 +77,6 @@ export default {
 .category6{
   background: #F1DBE9  url("../assets/Ellipse 12.png"); 
 }
-
 
 
 </style>
