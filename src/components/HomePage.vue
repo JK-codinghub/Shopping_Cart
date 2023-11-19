@@ -62,19 +62,38 @@
       </div>
     </div>
 
+
+    <!-- Line -->
+    <div class="horizontalRow"></div>
+
+    <!-- Footer summary Page  -->
+    <div class="row footerRow gx-0 d-flex justify-content-center">
+      <div class="col-10">
+        <FooterPage/>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row gx-0 d-flex align-items-center justify-content-center font3"
+      style="background: #20050A;color:white; height: 68px;">
+      ©2022-23 Powered By dummy team
+    </div>
+
   </div>
 </template>
 
 <script>
  
 import OffersPage from './OffersPage.vue';
-import ProductCategory from './ProductCategory.vue'
+import ProductCategory from './ProductCategory.vue';
+import FooterPage from './FooterPage.vue'
 
 export default {
   name: "HomePage",
   components:{
     OffersPage,
-    ProductCategory
+    ProductCategory,
+    FooterPage
   }
 };
 </script>
@@ -152,6 +171,16 @@ line-height: normal;
   margin-top: 68px !important;
 }
 .categoryRow{
+  margin-top: 68px !important;
+}
+.horizontalRow{
+  background-color: #e0dfde;
+  align-self: stretch;
+  min-height: 1px;
+  margin-top: 68px;
+  width: 100%;
+}
+.footerRow{
   margin-top: 68px !important;
 }
 </style>
