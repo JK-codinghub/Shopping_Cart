@@ -33,14 +33,14 @@
     </div>
 
     <!-- Banner 1 -->
-    <div class="container-fluid m-0 p-0 bg-warning">
+    <div class="container-fluid m-0 p-0">
       <div class="col-12">
         <img src="../assets/banner1.jpg" style="width:100%" alt="">
       </div>
     </div>
 
     <!-- Poduct Category -->
-    <div class="row gx-0 categoryRow d-flex justify-content-center">
+    <div class="row gx-0 rowGap d-flex justify-content-center">
       <div class="col-10">
         <ProductCategory/>
       </div>
@@ -48,26 +48,31 @@
 
     
     <!-- Offers -->
-    <div class="row offersRow gx-0 d-flex justify-content-center">
+    <div class="row rowGap gx-0 d-flex justify-content-center">
       <div class="col-10 d-flex justify-content-start">
         <OffersPage/>
       </div>
     </div>
 
+    <!-- Trending Product Page -->
+    <div class="row rowGap d-flex justify-content-center">
+      <div class="col-10">
+        <TrendPage/>
+      </div>
+    </div>
 
     <!-- Banner 2 -->
-    <div class="container-fluid banner2 m-0 p-0">
+    <div class="container-fluid rowGap m-0 p-0">
       <div class="col-12">
         <img src="../assets/banner2.jpg" style="width:100%" alt="">
       </div>
     </div>
 
 
-    <!-- Line -->
-    <div class="horizontalRow"></div>
+    <div class="horizontalRow rowGap"></div>
 
     <!-- Footer summary Page  -->
-    <div class="row footerRow gx-0 d-flex justify-content-center">
+    <div class="row rowGap gx-0 d-flex justify-content-center">
       <div class="col-10">
         <FooterPage/>
       </div>
@@ -86,14 +91,16 @@
  
 import OffersPage from './OffersPage.vue';
 import ProductCategory from './ProductCategory.vue';
-import FooterPage from './FooterPage.vue'
+import FooterPage from './FooterPage.vue';
+import TrendPage from './TrendingPage.vue';
 
 export default {
   name: "HomePage",
   components:{
     OffersPage,
     ProductCategory,
-    FooterPage
+    FooterPage,
+    TrendPage
   }
 };
 </script>
@@ -164,23 +171,15 @@ line-height: normal;
 .navlinks{
   margin-left:24.67px;
 }
-.banner2{
-  margin-top: 68px !important;
-}
-.offersRow{
-  margin-top: 68px !important;
-}
-.categoryRow{
-  margin-top: 68px !important;
-}
+
 .horizontalRow{
   background-color: #e0dfde;
   align-self: stretch;
   min-height: 1px;
-  margin-top: 68px;
   width: 100%;
 }
-.footerRow{
+
+.rowGap{
   margin-top: 68px !important;
 }
 </style>
