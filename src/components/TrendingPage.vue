@@ -8,10 +8,23 @@
             <!-- Card 1 -->
             <div class="col-3 cardRow">
                 <div class="card" style="width:264px;border:none;">
-                    <img src="../assets/Rectangle 4.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/Rectangle 4.jpg" class="card-img-top card_image" alt="...">
+
+                    <div class="overlay">                    
+                        <a href="#" class="button d-flex align-items-center justify-content-center">
+                            <i class="bi bi-cart3 istyle"></i>
+                        </a>
+                        <a href="#" class="button d-flex align-items-center justify-content-center">
+                            <i class="bi bi-heart-fill istyle"></i>
+                        </a>
+                        <a href="#" class="button d-flex align-items-center justify-content-center">
+                            <i class="bi bi-share-fill istyle"></i>
+                        </a>                    
+                    </div>
+
                     <div class="card-body">
                         <div class="row gx-0 d-flex justify-content-center">
-                            <div class="col-7 text-center"> Men Henley Neck Full Sleeve Red Wine</div>
+                            <div class="col-10 text-center"> Men Henley Neck Full Sleeve Red Wine</div>
                             <div class="col-7 mt-1 d-flex align-items-center justify-content-center"><span
                                     class="newPrice">₹399</span><span class="oldPrice">₹1299</span></div>
                             <div class="col-12 mt-1">
@@ -19,10 +32,8 @@
                                     <div class="col-2 boxStyle d-flex align-items-center justify-content-center">S</div>
                                     <div class="col-2 boxStyle d-flex align-items-center justify-content-center">M</div>
                                     <div class="col-2 boxStyle d-flex align-items-center justify-content-center">L</div>
-                                    <div class="col-2 boxStyle d-flex align-items-center justify-content-center">XL
-                                    </div>
-                                    <div class="col-2 boxStyle d-flex align-items-center justify-content-center">XXL
-                                    </div>
+                                    <div class="col-2 boxStyle d-flex align-items-center justify-content-center">XL</div>
+                                    <div class="col-2 boxStyle d-flex align-items-center justify-content-center">XXL</div>
                                 </div>
                             </div>
                         </div>
@@ -94,4 +105,56 @@
         height: 36px;
         border: 1px solid #E6E6E6;
     }
+
+    
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 264px;
+  height: 412px;
+  transition: transform 0.4s;
+}
+
+.card:hover img {
+  transform: scale(1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 264px;
+  height: 412px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+
+  background: rgba(31, 31, 31, 0.30);
+  backdrop-filter: blur(5px);
+
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+a{
+    width: 54px;
+    height: 54px;
+    border-radius: 27px;
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: white;
+}
+
+.istyle{
+    font-size: 26px;
+    color: #770015
+}
+
 </style>
