@@ -43,7 +43,7 @@ export default {
 	overflow-x: auto;
 }
 ::-webkit-scrollbar{
-    display: none;
+    visibility: hidden;
 }
 .categoryStyle{
     margin-top: 20px;
