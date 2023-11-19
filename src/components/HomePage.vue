@@ -89,6 +89,13 @@
       </div>
     </div>
 
+    <!-- Banner 3 -->
+    <div class="container-fluid rowGap m-0 p-0">
+      <div class="col-12">
+        <img src="../assets/banner3.jpg" style="width:100%" alt="">
+      </div>
+    </div>
+
     <div class="horizontalRow rowGap"></div>
 
     <!-- Footer summary Page  -->
