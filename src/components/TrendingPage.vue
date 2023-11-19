@@ -39,7 +39,10 @@
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="row gx-0 d-flex align-items-center justify-content-center" style="margin-top: 48.11px;">
+            <div class="btn btnStyle d-flex align-items-center justify-content-center">VIEW ALL</div>
         </div>
     </div>
 </template>
@@ -157,8 +160,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-
   background: rgba(31, 31, 31, 0.30);
   backdrop-filter: blur(5px);
 
@@ -176,11 +177,23 @@ a{
     margin-right: 10px;
     text-decoration: none;
     background-color: white;
+    cursor: pointer;
 }
 
 .istyle{
     font-size: 26px;
     color: #770015
+}
+
+.btnStyle{
+    width: 170px;
+    height: 48px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    background: #770015;
+    cursor: pointer;
 }
 
 </style>
