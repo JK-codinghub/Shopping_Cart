@@ -183,6 +183,26 @@
       </div>
     </div>
 
+    <!-- Subscription -->
+    <div class="row rowGap gx-0 d-flex justify-content-center">
+      <div class="col-10 subscription">
+       <div class="row gx-0  d-flex justify-content-center">
+        <div class="col-8">
+          <div class="row gx-0">
+            <div class="col-12 subscribeTitle font7">Subscribe to get updates on exciting offers
+              & deals</div>
+            <div class="col-12 emailInput">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control text-light" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-addon2">
+                <span class="input-group-text font6" id="basic-addon2"> Subscribe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+       </div>
+    </div>
+
 
     <div class="horizontalRow rowGap"></div>
 
@@ -383,5 +403,32 @@ line-height: normal;
 }
 .line{
   border-left: 1px solid #FFC7D1;
+}
+.subscription{
+ padding:60.42px 0px;
+ background: linear-gradient(97deg, #AB001E -6.23%, #770015 105.09%);
+}
+.subscribeTitle{
+  color: #FFF;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  margin-bottom: 27.16px;
+  width: 694px !important;
+}
+.form-control{
+  height: 68px;
+  padding: 24px 28.5px;
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.form-control::placeholder{
+  color: #FFF;
+  font-weight: normal;
+}
+.input-group-text{
+  background: #FFF;
+  color: #770015;
+  font-weight: 500;
 }
 </style>
