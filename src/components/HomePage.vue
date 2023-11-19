@@ -96,6 +96,40 @@
       </div>
     </div>
 
+
+    <!-- Deal -->
+    <div class="row gx-0 d-flex justify-content-center">
+      <div class="col-10">
+        <div class="row gx-0 d-flex justify-content-center">
+          <div class="card deal1 rowGap">
+            <div class="row gx-0">
+              <div class="col-12 d-flex justify-content-center">
+                <img loading="lazy" src="../assets/diamond.jpg" class="deals" />
+              </div>
+              <div class="col-12 d-flex justify-content-center font7 message">Hurry Up!</div>
+              <div class="col-12 d-flex justify-content-center font8 discount">85% OFF</div>
+              <div class="col-12 d-flex justify-content-center font7 sale">Sale</div>
+              <div class="col-12 d-flex justify-content-center mt-2"> <span
+                  class="btn border border-light-1 text-light px-3 py-2 shopNow">SHOP NOW</span></div>
+            </div>
+          </div>
+    
+          <div class="card deal2 rowGap">
+            <div class="row gx-0">
+              <div class="col-12 d-flex justify-content-center">
+                <img loading="lazy" src="../assets/Tag.jpg" class="deals" />
+              </div>
+              <div class="col-12 d-flex justify-content-center font7 message">Hurry Up!</div>
+              <div class="col-12 d-flex justify-content-center font8 discount">75% OFF</div>
+              <div class="col-12 d-flex justify-content-center font7 sale">Sale</div>
+              <div class="col-12 d-flex justify-content-center mt-2"> <span
+                  class="btn border border-light-1 text-light px-3 py-2">SHOP NOW</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="horizontalRow rowGap"></div>
 
     <!-- Footer summary Page  -->
@@ -214,5 +248,88 @@ line-height: normal;
 
 .rowGap{
   margin-top: 68px !important;
+}
+
+.deal1{
+  background: #CCCEA7;
+  margin-right:24px;
+}
+.deal1, .deal2:hover{
+  width: 580px;
+  cursor: pointer;
+}
+.btn:hover{
+  opacity: 0.4;
+}
+
+.message:hover{
+  font-size: 40px;
+}
+.discount:hover{
+  font-size: 40px;
+}
+
+.deal2{
+  background: #D6BEBE;
+}
+
+.deals{
+  margin-top: 54.86px;
+}
+
+.message{
+  margin-top: 48.27px;
+  color: var(--Primary-Color_1, #1C1C1C);
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+}
+
+.discount{
+  margin-top: 22px;
+  color: var(--Primary-Color_1, #1C1C1C);
+  font-family: "Playfair Display";
+  font-weight: 600;
+}
+
+.sale{
+  margin-top: 22px;
+  color: var(--Primary-Color_1, #1C1C1C);
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+}
+.shopNow{
+  margin-bottom: 54.86px;
+}
+
+@media(min-width: 992px){
+  .deal1{
+    width:400px !important;
+  }
+  .deal2{
+    width:400px !important;
+  }
+}
+
+@media(min-width: 1200px){
+  .deal1{
+    width: 548px;
+    height: 652px;
+  }
+  .deal2{
+    width: 548px;
+    height: 652px;
+  }
+}
+@media (min-width:1366px){
+  .deal1{
+    width: 548px;
+    height: 652px;
+  }
+  .deal2{
+    width: 548px;
+    height: 652px;
+  }
 }
 </style>
