@@ -13,7 +13,7 @@
                     </div>
 
                     <!-- Icons Row -->
-                    <div class="col-12 mt-1 d-flex justify-content-start">
+                    <div class="col-12 mt-3 d-flex justify-content-start">
                         <!-- Facebook  -->
                         <i class="bi bi-facebook iconStyle facebook" size="2px"></i>
 
