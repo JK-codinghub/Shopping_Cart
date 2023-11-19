@@ -130,6 +130,60 @@
       </div>
     </div>
 
+    <!-- Services -->
+    <div class="row rowGap services gx-0 d-flex justify-content-center">
+      <div class="col-10">
+        <div class="row gx-0">
+
+          <div class="col-sm-6 col-md-3">
+            <div class="row gx-0">
+              <div class="col-12 d-flex justify-content-center">
+                <img src="../assets/Group.jpg" alt="">
+              </div>
+              <div class="col-12  d-flex justify-content-center font4 serviceName">
+                7 Days Return
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 line">
+            <div class="row gx-0">
+              <div class="col-12 d-flex justify-content-center">
+                <img src="../assets/Group 196.jpg" alt="">
+              </div>
+              <div class="col-12  d-flex justify-content-center font4 serviceName">
+                Quality Products
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 line">
+            <div class="row gx-0">
+              <div class="col-12 d-flex justify-content-center">
+                <img src="../assets/Group 197.jpg" alt="">
+              </div>
+              <div class="col-12  d-flex justify-content-center font4 serviceName">
+                Safe Payment
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 line">
+            <div class="row gx-0">
+              <div class="col-12 d-flex justify-content-center">
+                <img src="../assets/Group 198.jpg" alt="">
+              </div>
+              <div class="col-12  d-flex justify-content-center font4 serviceName">
+                24x7 Helpline
+              </div>
+            </div>
+          </div>
+
+        </div>        
+      </div>
+    </div>
+
+
     <div class="horizontalRow rowGap"></div>
 
     <!-- Footer summary Page  -->
@@ -196,7 +250,7 @@ export default {
 .font5 {
   font-size: 18px;
 }
-font6 {
+.font6 {
   font-size: 22px;
 }
 .font7 {
@@ -251,11 +305,18 @@ line-height: normal;
 }
 
 .deal1{
+  width: 548px;
+  height: 652px;
   background: #CCCEA7;
   margin-right:24px;
 }
+
+.deal2{
+  width: 548px;
+  height: 652px;
+  background: #D6BEBE;
+}
 .deal1, .deal2:hover{
-  width: 580px;
   cursor: pointer;
 }
 .btn:hover{
@@ -267,10 +328,6 @@ line-height: normal;
 }
 .discount:hover{
   font-size: 40px;
-}
-
-.deal2{
-  background: #D6BEBE;
 }
 
 .deals{
@@ -303,33 +360,28 @@ line-height: normal;
   margin-bottom: 54.86px;
 }
 
-@media(min-width: 992px){
+@media(min-width: 1200px) {
   .deal1{
-    width:400px !important;
+    width: 548px;
+    height: 652px;
   }
   .deal2{
-    width:400px !important;
+    width: 548px;
+    height: 652px;
   }
 }
 
-@media(min-width: 1200px){
-  .deal1{
-    width: 548px;
-    height: 652px;
-  }
-  .deal2{
-    width: 548px;
-    height: 652px;
-  }
+.services{
+  background: #F5F4F2;
+  padding: 39.15px 0px;
 }
-@media (min-width:1366px){
-  .deal1{
-    width: 548px;
-    height: 652px;
-  }
-  .deal2{
-    width: 548px;
-    height: 652px;
-  }
+.serviceName{
+  margin-top: 25px;
+  color: var(--Primary-Color_1, #1C1C1C);
+  font-family: "Montserrat"; 
+  font-weight: 500;
+}
+.line{
+  border-left: 1px solid #FFC7D1;
 }
 </style>
