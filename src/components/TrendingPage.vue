@@ -4,11 +4,10 @@
         <h2 class="rowGap"><span class="font7">Trending T-Shirts</span></h2>
 
         <div class="row gx-0">
-
-            <!-- Card 1 -->
-            <div class="col-3 cardRow">
+            <!-- Card  -->
+            <div class="col-sm-8 col-md-6 col-lg-6 col-xl-3 cardRow" v-for="(product, index) in productList.splice(0,8)" :key="index">
                 <div class="card" style="width:264px;border:none;">
-                    <img src="../assets/Rectangle 4.jpg" class="card-img-top card_image" alt="...">
+                    <img :src="require(`@/assets/${product.image}`) " class="card-img-top card_image" alt="...">
 
                     <div class="overlay">                    
                         <a href="#" class="button d-flex align-items-center justify-content-center">
@@ -24,16 +23,16 @@
 
                     <div class="card-body">
                         <div class="row gx-0 d-flex justify-content-center">
-                            <div class="col-10 text-center"> Men Henley Neck Full Sleeve Red Wine</div>
+                            <div class="col-10 text-center"> {{product.name}}</div>
                             <div class="col-7 mt-1 d-flex align-items-center justify-content-center"><span
-                                    class="newPrice">₹399</span><span class="oldPrice">₹1299</span></div>
+                                    class="newPrice">₹{{ product.newPrice }}</span><span class="oldPrice">₹{{ product.oldPrice}}</span></div>
                             <div class="col-12 mt-1">
                                 <div class="row gx-0 d-flex justify-content-evenly">
-                                    <div class="col-2 boxStyle d-flex align-items-center justify-content-center">S</div>
-                                    <div class="col-2 boxStyle d-flex align-items-center justify-content-center">M</div>
-                                    <div class="col-2 boxStyle d-flex align-items-center justify-content-center">L</div>
-                                    <div class="col-2 boxStyle d-flex align-items-center justify-content-center">XL</div>
-                                    <div class="col-2 boxStyle d-flex align-items-center justify-content-center">XXL</div>
+                                    <div class="col-2 boxStyle d-flex align-items-center justify-content-center"
+                                     v-for="size in sizes" :key="size"
+                                    >
+                                        {{ size.listCode}}
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>
@@ -41,15 +40,42 @@
                 </div>
             </div>
 
-
-
         </div>
     </div>
 </template>
 
 <script>
+    import { ref } from 'vue';
     export default {
-        name: "TrendingPage"
+        name: "TrendingPage",
+        setup() {
+            const productList = ref([
+                {name:"Men Henley Neck Full Sleeve Red Wine", newPrice:"399", oldPrice:"1299", image:"Rectangle 3.jpg"},
+                {name:"Men Henley Neck Full Sleeve Red Wine", newPrice:"399", oldPrice:"1299", image:"Rectangle 4.jpg"},
+                {name:"Men Henley Neck Full Sleeve Red Wine", newPrice:"399", oldPrice:"1299", image:"Rectangle 5.jpg"},
+                {name:"Men Henley Neck Full Sleeve Red Wine", newPrice:"399", oldPrice:"1299", image:"Rectangle 6.jpg"},
+                {name:"Men Henley Neck Full Sleeve Red Wine", newPrice:"399", oldPrice:"1299", image:"Rectangle 3.jpg"},
+                {name:"Men Henley Neck Full Sleeve Red Wine", newPrice:"399", oldPrice:"1299", image:"Rectangle 4.jpg"},
+                {name:"Men Henley Neck Full Sleeve Red Wine", newPrice:"399", oldPrice:"1299", image:"Rectangle 5.jpg"},
+                {name:"Men Henley Neck Full Sleeve Red Wine", newPrice:"399", oldPrice:"1299", image:"Rectangle 6.jpg"},
+                {name:"Men Henley Neck Full Sleeve Red Wine", newPrice:"399", oldPrice:"1299", image:"Rectangle 3.jpg"},
+                {name:"Men Henley Neck Full Sleeve Red Wine", newPrice:"399", oldPrice:"1299", image:"Rectangle 4.jpg"},
+                {name:"Men Henley Neck Full Sleeve Red Wine", newPrice:"399", oldPrice:"1299", image:"Rectangle 5.jpg"},
+                {name:"Men Henley Neck Full Sleeve Red Wine", newPrice:"399", oldPrice:"1299", image:"Rectangle 6.jpg"},
+            ]);
+
+            const sizes = ref([
+                { listName:"Small", listCode:"S" },
+                { listName:"Medium", listCode:"M" },
+                { listName:"Large", listCode:"L" },
+                { listName:"X-Large", listCode:"XL" },
+                { listName:"XX-Large", listCode:"XXL" },
+            ])
+            return{
+                productList,
+                sizes
+            }
+        }
     }
 </script>
 
