@@ -96,6 +96,114 @@
       </div>
     </div>
 
+
+    <!-- Deal -->
+    <div class="row gx-0 d-flex justify-content-center">
+      <div class="col-10">
+        <div class="row gx-0 d-flex justify-content-center">
+          <div class="card deal1 rowGap">
+            <div class="row gx-0">
+              <div class="col-12 d-flex justify-content-center">
+                <img loading="lazy" src="../assets/diamond.jpg" class="deals" />
+              </div>
+              <div class="col-12 d-flex justify-content-center font7 message">Hurry Up!</div>
+              <div class="col-12 d-flex justify-content-center font8 discount">85% OFF</div>
+              <div class="col-12 d-flex justify-content-center font7 sale">Sale</div>
+              <div class="col-12 d-flex justify-content-center mt-2"> <span
+                  class="btn border border-light-1 text-light px-3 py-2 shopNow">SHOP NOW</span></div>
+            </div>
+          </div>
+    
+          <div class="card deal2 rowGap">
+            <div class="row gx-0">
+              <div class="col-12 d-flex justify-content-center">
+                <img loading="lazy" src="../assets/Tag.jpg" class="deals" />
+              </div>
+              <div class="col-12 d-flex justify-content-center font7 message">Hurry Up!</div>
+              <div class="col-12 d-flex justify-content-center font8 discount">75% OFF</div>
+              <div class="col-12 d-flex justify-content-center font7 sale">Sale</div>
+              <div class="col-12 d-flex justify-content-center mt-2"> <span
+                  class="btn border border-light-1 text-light px-3 py-2">SHOP NOW</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="row rowGap services gx-0 d-flex justify-content-center">
+      <div class="col-10">
+        <div class="row gx-0">
+
+          <div class="col-sm-6 col-md-3">
+            <div class="row gx-0">
+              <div class="col-12 d-flex justify-content-center">
+                <img src="../assets/Group.jpg" alt="">
+              </div>
+              <div class="col-12  d-flex justify-content-center font4 serviceName">
+                7 Days Return
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 line">
+            <div class="row gx-0">
+              <div class="col-12 d-flex justify-content-center">
+                <img src="../assets/Group 196.jpg" alt="">
+              </div>
+              <div class="col-12  d-flex justify-content-center font4 serviceName">
+                Quality Products
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 line">
+            <div class="row gx-0">
+              <div class="col-12 d-flex justify-content-center">
+                <img src="../assets/Group 197.jpg" alt="">
+              </div>
+              <div class="col-12  d-flex justify-content-center font4 serviceName">
+                Safe Payment
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 line">
+            <div class="row gx-0">
+              <div class="col-12 d-flex justify-content-center">
+                <img src="../assets/Group 198.jpg" alt="">
+              </div>
+              <div class="col-12  d-flex justify-content-center font4 serviceName">
+                24x7 Helpline
+              </div>
+            </div>
+          </div>
+
+        </div>        
+      </div>
+    </div>
+
+    <!-- Subscription -->
+    <div class="row rowGap gx-0 d-flex justify-content-center">
+      <div class="col-10 subscription">
+       <div class="row gx-0  d-flex justify-content-center">
+        <div class="col-8">
+          <div class="row gx-0">
+            <div class="col-12 subscribeTitle font7">Subscribe to get updates on exciting offers
+              & deals</div>
+            <div class="col-12 emailInput">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control text-light" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-addon2">
+                <span class="input-group-text font6" id="basic-addon2"> Subscribe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+       </div>
+    </div>
+
+
     <div class="horizontalRow rowGap"></div>
 
     <!-- Footer summary Page  -->
@@ -162,7 +270,7 @@ export default {
 .font5 {
   font-size: 18px;
 }
-font6 {
+.font6 {
   font-size: 22px;
 }
 .font7 {
@@ -214,5 +322,113 @@ line-height: normal;
 
 .rowGap{
   margin-top: 68px !important;
+}
+
+.deal1{
+  width: 548px;
+  height: 652px;
+  background: #CCCEA7;
+  margin-right:24px;
+}
+
+.deal2{
+  width: 548px;
+  height: 652px;
+  background: #D6BEBE;
+}
+.deal1, .deal2:hover{
+  cursor: pointer;
+}
+.btn:hover{
+  opacity: 0.4;
+}
+
+.message:hover{
+  font-size: 40px;
+}
+.discount:hover{
+  font-size: 40px;
+}
+
+.deals{
+  margin-top: 54.86px;
+}
+
+.message{
+  margin-top: 48.27px;
+  color: var(--Primary-Color_1, #1C1C1C);
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+}
+
+.discount{
+  margin-top: 22px;
+  color: var(--Primary-Color_1, #1C1C1C);
+  font-family: "Playfair Display";
+  font-weight: 600;
+}
+
+.sale{
+  margin-top: 22px;
+  color: var(--Primary-Color_1, #1C1C1C);
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+}
+.shopNow{
+  margin-bottom: 54.86px;
+}
+
+@media(min-width: 1200px) {
+  .deal1{
+    width: 548px;
+    height: 652px;
+  }
+  .deal2{
+    width: 548px;
+    height: 652px;
+  }
+}
+
+.services{
+  background: #F5F4F2;
+  padding: 39.15px 0px;
+}
+.serviceName{
+  margin-top: 25px;
+  color: var(--Primary-Color_1, #1C1C1C);
+  font-family: "Montserrat"; 
+  font-weight: 500;
+}
+.line{
+  border-left: 1px solid #FFC7D1;
+}
+.subscription{
+ padding:60.42px 0px;
+ background: linear-gradient(97deg, #AB001E -6.23%, #770015 105.09%);
+}
+.subscribeTitle{
+  color: #FFF;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  margin-bottom: 27.16px;
+  width: 694px !important;
+}
+.form-control{
+  height: 68px;
+  padding: 24px 28.5px;
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.form-control::placeholder{
+  color: #FFF;
+  font-weight: normal;
+}
+.input-group-text{
+  background: #FFF;
+  color: #770015;
+  font-weight: 500;
 }
 </style>
