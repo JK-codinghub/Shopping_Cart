@@ -62,19 +62,32 @@
       </div>
     </div>
 
+
+    <!-- Line -->
+    <div class="horizontalRow"></div>
+
+    <!-- Footer  -->
+    <div class="row footerRow gx-0 d-flex justify-content-center">
+      <div class="col-10 d-flex justify-content-start">
+        <FooterPage/>
+      </div>
+    </div>
+
   </div>
 </template>
 
 <script>
  
 import OffersPage from './OffersPage.vue';
-import ProductCategory from './ProductCategory.vue'
+import ProductCategory from './ProductCategory.vue';
+import FooterPage from './FooterPage.vue'
 
 export default {
   name: "HomePage",
   components:{
     OffersPage,
-    ProductCategory
+    ProductCategory,
+    FooterPage
   }
 };
 </script>
@@ -152,6 +165,16 @@ line-height: normal;
   margin-top: 68px !important;
 }
 .categoryRow{
+  margin-top: 68px !important;
+}
+.horizontalRow{
+  background-color: #e0dfde;
+  align-self: stretch;
+  min-height: 1px;
+  margin-top: 68px;
+  width: 100%;
+}
+.footerRow{
   margin-top: 68px !important;
 }
 </style>
