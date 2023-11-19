@@ -68,7 +68,7 @@
 
     <!-- Footer  -->
     <div class="row footerRow gx-0 d-flex justify-content-center">
-      <div class="col-10 d-flex justify-content-start">
+      <div class="col-10">
         <FooterPage/>
       </div>
     </div>
