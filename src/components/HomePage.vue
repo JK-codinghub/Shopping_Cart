@@ -61,6 +61,13 @@
       </div>
     </div>
 
+    <!-- Featured Product Page -->
+    <div class="row rowGap d-flex justify-content-center">
+      <div class="col-10">
+        <FeaturedProduct/>
+      </div>
+    </div>
+
     <!-- Banner 2 -->
     <div class="container-fluid rowGap m-0 p-0">
       <div class="col-12">
@@ -68,6 +75,19 @@
       </div>
     </div>
 
+    <!-- New Product Page -->
+    <div class="row rowGap d-flex justify-content-center">
+      <div class="col-10">
+        <NewProducts/>
+      </div>
+    </div>
+
+    <!-- Best Selling Product Page -->
+    <div class="row rowGap d-flex justify-content-center">
+      <div class="col-10">
+        <BestSellProducts/>
+      </div>
+    </div>
 
     <div class="horizontalRow rowGap"></div>
 
@@ -93,6 +113,9 @@ import OffersPage from './OffersPage.vue';
 import ProductCategory from './ProductCategory.vue';
 import FooterPage from './FooterPage.vue';
 import TrendPage from './TrendingPage.vue';
+import FeaturedProduct from './FeaturedProduct.vue';
+import NewProducts from './NewProducts.vue';
+import BestSellProducts from './BestSellProducts.vue';
 
 export default {
   name: "HomePage",
@@ -100,7 +123,10 @@ export default {
     OffersPage,
     ProductCategory,
     FooterPage,
-    TrendPage
+    TrendPage,
+    FeaturedProduct,
+    NewProducts,
+    BestSellProducts
   }
 };
 </script>
