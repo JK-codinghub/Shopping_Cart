@@ -3,7 +3,7 @@
         <div class="row gx-0">
 
             <!-- Summary -->
-            <div class="col-4">
+            <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
                 <div class="row gx-0">
                     <div class="col-12 d-flex justify-content-start summary font3 ">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -34,7 +34,7 @@
             </div>
 
             <!-- Links -->
-            <div class="col-2">
+            <div class="col-sm-12 col-md-12 col-lg-2 mb-4">
                 <div class="row gx-0">
                     <div class="col-12 title">ONLINE SHOPPING</div>
 
@@ -46,7 +46,7 @@
 
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-sm-12 col-md-12 col-lg-3 mb-4">
                 <div class="col-12 title">CUSTOMER POLICIES</div>
 
                 <div class="col-12 listRow font3">About Us</div>
@@ -56,7 +56,7 @@
                 <div class="col-12 font3">Contact Us</div>
             </div>
 
-            <div class="col-3">
+            <div class="col-sm-12 col-md-12 col-lg-3 mb-4">
                 <div class="col-12 title">STORE INFORMATION</div>
 
 
