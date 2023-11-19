@@ -66,11 +66,17 @@
     <!-- Line -->
     <div class="horizontalRow"></div>
 
-    <!-- Footer  -->
+    <!-- Footer summary Page  -->
     <div class="row footerRow gx-0 d-flex justify-content-center">
       <div class="col-10">
         <FooterPage/>
       </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row gx-0 d-flex align-items-center justify-content-center font3"
+      style="background: #20050A;color:white; height: 68px;">
+      ©2022-23 Powered By dummy team
     </div>
 
   </div>
