@@ -7,13 +7,11 @@
         <div class="col-6 d-flex justify-content-start">
           Welcome to Our Store Hiscraves
         </div>
-        <div
-          class="col-6 d-flex justify-content-end contactNum"
-        >
+        <div class="col-6 d-flex justify-content-end contactNum">
           <img loading="lazy" src="../assets/phone.png" class="phone" />
           Call Us: 1234567890
         </div>
-      </div>   
+      </div>
     </div>
 
     <!-- Navigation Row -->
@@ -42,29 +40,29 @@
     <!-- Poduct Category -->
     <div class="row gx-0 rowGap d-flex justify-content-center">
       <div class="col-10">
-        <ProductCategory/>
+        <ProductCategory />
       </div>
     </div>
 
-    
+
     <!-- Offers -->
     <div class="row rowGap gx-0 d-flex justify-content-center">
       <div class="col-10 d-flex justify-content-start">
-        <OffersPage/>
+        <OffersPage />
       </div>
     </div>
 
     <!-- Trending Product Page -->
     <div class="row rowGap d-flex justify-content-center">
       <div class="col-10">
-        <TrendPage/>
+        <TrendPage />
       </div>
     </div>
 
     <!-- Featured Product Page -->
     <div class="row rowGap d-flex justify-content-center">
       <div class="col-10">
-        <FeaturedProduct/>
+        <FeaturedProduct />
       </div>
     </div>
 
@@ -78,21 +76,21 @@
     <!-- New Product Page -->
     <div class="row rowGap d-flex justify-content-center">
       <div class="col-10">
-        <NewProducts/>
+        <NewProducts />
       </div>
     </div>
 
     <!-- Best Selling Product Page -->
     <div class="row rowGap d-flex justify-content-center">
       <div class="col-10">
-        <BestSellProducts/>
+        <BestSellProducts />
       </div>
     </div>
 
     <!-- Product Category2 -->
     <div class="row rowGap d-flex justify-content-center">
-      <div class="col-10">  
-        <ProductCategory2/>
+      <div class="col-10">
+        <ProductCategory2 />
       </div>
     </div>
 
@@ -120,7 +118,7 @@
                   class="btn border border-light-1 text-light px-3 py-2 shopNow">SHOP NOW</span></div>
             </div>
           </div>
-    
+
           <div class="card deal2 rowGap">
             <div class="row gx-0">
               <div class="col-12 d-flex justify-content-center">
@@ -186,28 +184,29 @@
             </div>
           </div>
 
-        </div>        
+        </div>
       </div>
     </div>
 
     <!-- Subscription -->
     <div class="row rowGap gx-0 d-flex justify-content-center">
       <div class="col-10 subscription">
-       <div class="row gx-0  d-flex justify-content-center">
-        <div class="col-8">
-          <div class="row gx-0">
-            <div class="col-12 subscribeTitle font7">Subscribe to get updates on exciting offers
-              & deals</div>
-            <div class="col-12 emailInput">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control text-light" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-addon2">
-                <span class="input-group-text font6" id="basic-addon2"> Subscribe</span>
+        <div class="row gx-0  d-flex justify-content-center">
+          <div class="col-8">
+            <div class="row gx-0">
+              <div class="col-12 subscribeTitle font7">Subscribe to get updates on exciting offers
+                & deals</div>
+              <div class="col-12 emailInput">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control text-light" placeholder="Enter your email" aria-label="Email"
+                    aria-describedby="basic-addon2">
+                  <span class="input-group-text font6" id="basic-addon2"> Subscribe</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-       </div>
-       </div>
+      </div>
     </div>
 
 
@@ -216,7 +215,7 @@
     <!-- Footer summary Page  -->
     <div class="row rowGap gx-0 d-flex justify-content-center">
       <div class="col-10">
-        <FooterPage/>
+        <FooterPage />
       </div>
     </div>
 
@@ -230,214 +229,241 @@
 </template>
 
 <script>
- 
-import OffersPage from './OffersPage.vue';
-import ProductCategory from './ProductCategory.vue';
-import FooterPage from './FooterPage.vue';
-import TrendPage from './TrendingPage.vue';
-import FeaturedProduct from './FeaturedProduct.vue';
-import NewProducts from './NewProducts.vue';
-import BestSellProducts from './BestSellProducts.vue';
-import ProductCategory2 from './ProductCategory2.vue';
 
-export default {
-  name: "HomePage",
-  components:{
-    OffersPage,
-    ProductCategory,
-    FooterPage,
-    TrendPage,
-    FeaturedProduct,
-    NewProducts,
-    BestSellProducts,
-    ProductCategory2
-  }
-};
+  import OffersPage from './OffersPage.vue';
+  import ProductCategory from './ProductCategory.vue';
+  import FooterPage from './FooterPage.vue';
+  import TrendPage from './TrendingPage.vue';
+  import FeaturedProduct from './FeaturedProduct.vue';
+  import NewProducts from './NewProducts.vue';
+  import BestSellProducts from './BestSellProducts.vue';
+  import ProductCategory2 from './ProductCategory2.vue';
+
+  export default {
+    name: "HomePage",
+    components: {
+      OffersPage,
+      ProductCategory,
+      FooterPage,
+      TrendPage,
+      FeaturedProduct,
+      NewProducts,
+      BestSellProducts,
+      ProductCategory2
+    }
+  };
 </script>
 
 <style scoped>
-.Home {
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  font-family: "Montserrat";
-  font-style: normal;
-  /* width: 1366px; */
-}
-.font1 {
-  font-size: 10px;
-}
-.font2 {
-  font-size: 12px;
-}
-.font3 {
-  font-size: 14px;
-}
-.font4 {
-  font-size: 16px;
-}
-.font5 {
-  font-size: 18px;
-}
-.font6 {
-  font-size: 22px;
-}
-.font7 {
-  font-size: 36px;
-}
-.font8 {
-  font-size: 84px;
-}
-.headerRow {
-  background: #1f1f1f;
-  color: white;
-}
-.Heading {
-  padding: 15.5px 0px 15.5px 0px;
-}
-.phone {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-}
-.contactNum {
-  margin-right: 16px;
-}
-.navigRow {
-  padding: 32px 0px 32px 0px;
-}
-.navbarIcon{
-  width: 24px;
-  height: 24px;
-}
-.logo{
-  color: var(--Primary-Color_1, #1C1C1C);
-  font-family: "Playfair Display";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.navlinks{
-  margin-left:24.67px;
-}
+  .Home {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    font-family: "Montserrat";
+    font-style: normal;
+  }
 
-.horizontalRow{
-  background-color: #e0dfde;
-  align-self: stretch;
-  min-height: 1px;
-  width: 100%;
-}
+  .font1 {
+    font-size: 10px;
+  }
 
-.rowGap{
-  margin-top: 68px !important;
-}
+  .font2 {
+    font-size: 12px;
+  }
 
-.deal1{
-  width: 548px;
-  height: 652px;
-  background: #CCCEA7;
-  margin-right:24px;
-}
+  .font3 {
+    font-size: 14px;
+  }
 
-.deal2{
-  width: 548px;
-  height: 652px;
-  background: #D6BEBE;
-}
-.deal1, .deal2:hover{
-  cursor: pointer;
-}
-.btn:hover{
-  opacity: 0.4;
-}
+  .font4 {
+    font-size: 16px;
+  }
 
-.message:hover{
-  font-size: 40px;
-}
-.discount:hover{
-  font-size: 40px;
-}
+  .font5 {
+    font-size: 18px;
+  }
 
-.deals{
-  margin-top: 54.86px;
-}
+  .font6 {
+    font-size: 22px;
+  }
 
-.message{
-  margin-top: 48.27px;
-  color: var(--Primary-Color_1, #1C1C1C);
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 600;
-}
+  .font7 {
+    font-size: 36px;
+  }
 
-.discount{
-  margin-top: 22px;
-  color: var(--Primary-Color_1, #1C1C1C);
-  font-family: "Playfair Display";
-  font-weight: 600;
-}
+  .font8 {
+    font-size: 84px;
+  }
 
-.sale{
-  margin-top: 22px;
-  color: var(--Primary-Color_1, #1C1C1C);
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 600;
-}
-.shopNow{
-  margin-bottom: 54.86px;
-}
+  .headerRow {
+    background: #1f1f1f;
+    color: white;
+  }
 
-@media(min-width: 1200px) {
-  .deal1{
+  .Heading {
+    padding: 15.5px 0px 15.5px 0px;
+  }
+
+  .phone {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  .contactNum {
+    margin-right: 16px;
+  }
+
+  .navigRow {
+    padding: 32px 0px 32px 0px;
+  }
+
+  .navbarIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .logo {
+    color: var(--Primary-Color_1, #1C1C1C);
+    font-family: "Playfair Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .navlinks {
+    margin-left: 24.67px;
+  }
+
+  .horizontalRow {
+    background-color: #e0dfde;
+    align-self: stretch;
+    min-height: 1px;
+    width: 100%;
+  }
+
+  .rowGap {
+    margin-top: 68px !important;
+  }
+
+  .deal1 {
     width: 548px;
     height: 652px;
+    background: #CCCEA7;
+    margin-right: 24px;
   }
-  .deal2{
+
+  .deal2 {
     width: 548px;
     height: 652px;
+    background: #D6BEBE;
   }
-}
 
-.services{
-  background: #F5F4F2;
-  padding: 39.15px 0px;
-}
-.serviceName{
-  margin-top: 25px;
-  color: var(--Primary-Color_1, #1C1C1C);
-  font-family: "Montserrat"; 
-  font-weight: 500;
-}
-.line{
-  border-left: 1px solid #FFC7D1;
-}
-.subscription{
- padding:60.42px 0px;
- background: linear-gradient(97deg, #AB001E -6.23%, #770015 105.09%);
-}
-.subscribeTitle{
-  color: #FFF;
-  text-align: center;
-  font-family: "Playfair Display";
-  font-weight: 600;
-  margin-bottom: 27.16px;
-  width: 694px !important;
-}
-.form-control{
-  height: 68px;
-  padding: 24px 28.5px;
-  background: rgba(255, 255, 255, 0.32);
-}
+  .deal1,
+  .deal2:hover {
+    cursor: pointer;
+  }
 
-.form-control::placeholder{
-  color: #FFF;
-  font-weight: normal;
-}
-.input-group-text{
-  background: #FFF;
-  color: #770015;
-  font-weight: 500;
-}
+  .btn:hover {
+    opacity: 0.4;
+  }
+
+  .message:hover {
+    font-size: 40px;
+  }
+
+  .discount:hover {
+    font-size: 40px;
+  }
+
+  .deals {
+    margin-top: 54.86px;
+  }
+
+  .message {
+    margin-top: 48.27px;
+    color: var(--Primary-Color_1, #1C1C1C);
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .discount {
+    margin-top: 22px;
+    color: var(--Primary-Color_1, #1C1C1C);
+    font-family: "Playfair Display";
+    font-weight: 600;
+  }
+
+  .sale {
+    margin-top: 22px;
+    color: var(--Primary-Color_1, #1C1C1C);
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .shopNow {
+    margin-bottom: 54.86px;
+  }
+
+  @media(min-width: 1200px) {
+    .deal1 {
+      width: 548px;
+      height: 652px;
+    }
+
+    .deal2 {
+      width: 548px;
+      height: 652px;
+    }
+  }
+
+  .services {
+    background: #F5F4F2;
+    padding: 39.15px 0px;
+  }
+
+  .serviceName {
+    margin-top: 25px;
+    color: var(--Primary-Color_1, #1C1C1C);
+    font-family: "Montserrat";
+    font-weight: 500;
+  }
+
+  .line {
+    border-left: 1px solid #FFC7D1;
+  }
+
+  .subscription {
+    padding: 60.42px 0px;
+    background: linear-gradient(97deg, #AB001E -6.23%, #770015 105.09%);
+  }
+
+  .subscribeTitle {
+    color: #FFF;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-weight: 600;
+    margin-bottom: 27.16px;
+    width: 694px !important;
+  }
+
+  .form-control {
+    height: 68px;
+    padding: 24px 28.5px;
+    background: rgba(255, 255, 255, 0.32);
+  }
+
+  .form-control::placeholder {
+    color: #FFF;
+    font-weight: normal;
+  }
+
+  .input-group-text {
+    background: #FFF;
+    color: #770015;
+    font-weight: 500;
+  }
 </style>
