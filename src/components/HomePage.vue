@@ -267,6 +267,10 @@
     font-style: normal;
   }
 
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
   .font1 {
     font-size: 10px;
   }
@@ -473,23 +477,24 @@
 
   .circle1{
     position: absolute;
-    right: 20px;
+    right: 0px;
     margin-top:-25px;
-    margin-right: -105px;
-    width:200px;
-    height:200px;
-    border-radius:100px;
-
+    margin-right:0px;
+    width: 100px;
+    height: 200px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;     
     background:#770015;
     z-index:2;
   }
   .circle2{
     position: absolute;
     margin-top:160px;
-    margin-left: -105px;
-    width:200px;
-    height:200px;
-    border-radius:100px;
+    margin-left: 0px;
+    width: 100px;
+    height: 200px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
     background:#770015;
     z-index:2;
   }
