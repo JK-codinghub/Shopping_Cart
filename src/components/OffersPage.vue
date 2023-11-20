@@ -43,6 +43,9 @@
   cursor: pointer;
 }
 
+img:hover{
+  opacity: 0.4;
+}
 
 .offerRow2{
   margin-top: 16px;
