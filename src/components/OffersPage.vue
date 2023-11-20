@@ -2,22 +2,22 @@
   <div class="m-0 p-0">
     <div class="row gx-0">
       <div class="col-6">
-        <img src="../assets/image 2.jpg" class="offerImg1 mr-2" alt="Image not loading">
+        <img loading="lazy" src="../assets/image 2.jpg" class="offerImg1 mr-2" alt="Image not loading">
       </div>
       <div class="col-6">
-        <img src="../assets/image 3.jpg" class="offerImg2" alt="Image not loading">
+        <img loading="lazy" src="../assets/image 3.jpg" class="offerImg2" alt="Image not loading">
       </div>
     </div>
 
     <div class="row gx-0 offerRow2">
       <div class="col-4">
-        <img src="../assets/image 4.jpg" class="offerImg4" alt="Image not loading">
+        <img loading="lazy" src="../assets/image 4.jpg" class="offerImg4" alt="Image not loading">
       </div>
       <div class="col-4">
-        <img src="../assets/image 6.jpg" class="offerImg5" alt="Image not loading">
+        <img loading="lazy" src="../assets/image 6.jpg" class="offerImg5" alt="Image not loading">
       </div>
       <div class="col-4">
-        <img src="../assets/image 5.jpg" class="offerImg6" alt="Image not loading">
+        <img loading="lazy" src="../assets/image 5.jpg" class="offerImg6" alt="Image not loading">
       </div>
     </div>
 

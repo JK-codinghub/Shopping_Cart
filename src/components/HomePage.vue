@@ -22,10 +22,10 @@
         </div>
         <div class="logo font4 d-flex align-items-center">Logo Here</div>
         <div class="d-flex d-flex justify-content-end">
-          <span class="navlinks"> <img src="../assets/search.png" alt=""> </span>
-          <span class="navlinks"> <img src="../assets/likes.png" alt=""> </span>
-          <span class="navlinks"> <img src="../assets/shopping-bag.png" alt=""> </span>
-          <span class="navlinks"> <img src="../assets/user-icon.png" alt=""> </span>
+          <span class="navlinks"> <img loading="lazy" src="../assets/search.png" alt=""> </span>
+          <span class="navlinks"> <img loading="lazy" src="../assets/likes.png" alt=""> </span>
+          <span class="navlinks"> <img loading="lazy" src="../assets/shopping-bag.png" alt=""> </span>
+          <span class="navlinks"> <img loading="lazy" src="../assets/user-icon.png" alt=""> </span>
         </div>
       </div>
     </div>
@@ -33,7 +33,7 @@
     <!-- Banner 1 -->
     <div class="container-fluid m-0 p-0">
       <div class="col-12">
-        <img src="../assets/banner1.jpg" style="width:100%" alt="">
+        <img loading="lazy" src="../assets/banner1.jpg" style="width:100%" alt="">
       </div>
     </div>
 
@@ -69,7 +69,7 @@
     <!-- Banner 2 -->
     <div class="container-fluid rowGap m-0 p-0">
       <div class="col-12">
-        <img src="../assets/banner2.jpg" style="width:100%" alt="">
+        <img  loading="lazy" src="../assets/banner2.jpg" style="width:100%" alt="">
       </div>
     </div>
 
@@ -97,7 +97,7 @@
     <!-- Banner 3 -->
     <div class="container-fluid rowGap m-0 p-0">
       <div class="col-12">
-        <img src="../assets/banner3.jpg" style="width:100%" alt="">
+        <img loading="lazy" src="../assets/banner3.jpg" style="width:100%" alt="">
       </div>
     </div>
 
@@ -147,7 +147,7 @@
           <div class="col-sm-6 col-md-3">
             <div class="row gx-0">
               <div class="col-12 d-flex justify-content-center">
-                <img src="../assets/Group.jpg" alt="">
+                <img loading="lazy" src="../assets/Group.jpg" alt="">
               </div>
               <div class="col-12  d-flex justify-content-center font4 serviceName">
                 7 Days Return
@@ -158,7 +158,7 @@
           <div class="col-sm-6 col-md-3 line">
             <div class="row gx-0">
               <div class="col-12 d-flex justify-content-center">
-                <img src="../assets/Group 196.jpg" alt="">
+                <img loading="lazy" src="../assets/Group 196.jpg" alt="">
               </div>
               <div class="col-12  d-flex justify-content-center font4 serviceName">
                 Quality Products
@@ -169,7 +169,7 @@
           <div class="col-sm-6 col-md-3 line">
             <div class="row gx-0">
               <div class="col-12 d-flex justify-content-center">
-                <img src="../assets/Group 197.jpg" alt="">
+                <img loading="lazy" src="../assets/Group 197.jpg" alt="">
               </div>
               <div class="col-12  d-flex justify-content-center font4 serviceName">
                 Safe Payment
@@ -180,7 +180,7 @@
           <div class="col-sm-6 col-md-3 line">
             <div class="row gx-0">
               <div class="col-12 d-flex justify-content-center">
-                <img src="../assets/Group 198.jpg" alt="">
+                <img loading="lazy" src="../assets/Group 198.jpg" alt="">
               </div>
               <div class="col-12  d-flex justify-content-center font4 serviceName">
                 24x7 Helpline

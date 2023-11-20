@@ -3,7 +3,7 @@
     <!-- Product Types -->
     <div class="row gx-0 d-flex justify-content-between">
       <div class="card" v-for="product in productList.splice(0,6)" :key="product">
-        <img :src="require(`@/assets/${product.image}`)" class="card-img-top" alt="">
+        <img loading="lazy" :src="require(`@/assets/${product.image}`)" class="card-img-top" alt="">
         <div class="overlay">
           <div class="productType d-flex align-items-center justify-content-center">{{product.name}}</div>
         </div>

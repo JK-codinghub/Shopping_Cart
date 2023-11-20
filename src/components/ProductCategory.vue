@@ -3,7 +3,7 @@
     <div class=" col-sm-6 col-md-4 col-lg-2 col-xl-2" v-for="(category,index) in categoryLoop" :key="index">
         <div class="row gx-0">
             <div class="col-12 d-flex justify-content-center" :class="category.class">
-             <img :src="require(`@/assets/${category.path}`) " width="170" height="170" alt="">    
+             <img loading="lazy" :src="require(`@/assets/${category.path}`) " width="170" height="170" alt="">    
             </div>       
             <div class="col-12 d-flex justify-content-center categoryStyle">{{category.name}}</div>
         </div>

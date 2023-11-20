@@ -7,7 +7,7 @@
             <!-- Card  -->
             <div class="col-sm-8 col-md-6 col-lg-6 col-xl-3 cardRow" v-for="(product, index) in productList.splice(0,8)" :key="index">
                 <div class="card" style="width:264px;border:none;">
-                    <img :src="require(`@/assets/${product.image}`) " class="card-img-top card_image" alt="...">
+                    <img loading="lazy" :src="require(`@/assets/${product.image}`) " class="card-img-top card_image" alt="...">
 
                     <div class="overlay">                    
                         <a href="#" class="button d-flex align-items-center justify-content-center">
