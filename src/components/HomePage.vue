@@ -89,6 +89,13 @@
       </div>
     </div>
 
+    <!-- Product Category2 -->
+    <div class="row rowGap d-flex justify-content-center">
+      <div class="col-10">  
+        <ProductCategory2/>
+      </div>
+    </div>
+
     <!-- Banner 3 -->
     <div class="container-fluid rowGap m-0 p-0">
       <div class="col-12">
@@ -231,6 +238,7 @@ import TrendPage from './TrendingPage.vue';
 import FeaturedProduct from './FeaturedProduct.vue';
 import NewProducts from './NewProducts.vue';
 import BestSellProducts from './BestSellProducts.vue';
+import ProductCategory2 from './ProductCategory2.vue';
 
 export default {
   name: "HomePage",
@@ -241,7 +249,8 @@ export default {
     TrendPage,
     FeaturedProduct,
     NewProducts,
-    BestSellProducts
+    BestSellProducts,
+    ProductCategory2
   }
 };
 </script>
@@ -303,11 +312,11 @@ export default {
 }
 .logo{
   color: var(--Primary-Color_1, #1C1C1C);
-font-family: "Playfair Display";
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .navlinks{
   margin-left:24.67px;
