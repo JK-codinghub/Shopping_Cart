@@ -135,6 +135,10 @@
       </div>
     </div>
 
+    <!-- Circles -->
+    <!-- <div class="circle1"></div>
+    <div class="circle2"></div> -->
+
     <!-- Services -->
     <div class="row rowGap services gx-0 d-flex justify-content-center">
       <div class="col-10">
@@ -465,5 +469,28 @@
     background: #FFF;
     color: #770015;
     font-weight: 500;
+  }
+
+  .circle1{
+    position: absolute;
+    right: 20px;
+    margin-top:-25px;
+    margin-right: -105px;
+    width:200px;
+    height:200px;
+    border-radius:100px;
+
+    background:#770015;
+    z-index:2;
+  }
+  .circle2{
+    position: absolute;
+    margin-top:160px;
+    margin-left: -105px;
+    width:200px;
+    height:200px;
+    border-radius:100px;
+    background:#770015;
+    z-index:2;
   }
 </style>
